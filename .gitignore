@@ -1,0 +1,12 @@
+.classpath
+.idea/
+.projectbin/
+gen/
+bin/
+imagemGaleriaAndroid.iml
+libs/
+out/
+proguard-project.txt
+project.properties
+.project
+
