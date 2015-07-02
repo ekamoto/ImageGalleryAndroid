@@ -29,7 +29,7 @@ public class ColecaoActivity extends ListActivity {
 
 		BancoService bancoService = new BancoService();
 		livros = bancoService.getAllLivros(getApplicationContext());
-		setListAdapter(new LivroAdapter(this, livros));
+		setListAdapter(new LivroAdapter(getApplicationContext(), livros));
 
 
     }
@@ -40,7 +40,7 @@ public class ColecaoActivity extends ListActivity {
 		
 		Livro livro = livros.get(position);
 		
-		Intent intent = new Intent(this, DetalheItemActivity.class);
+		Intent intent = new Intent(getApplicationContext(), DetalheItemActivity.class);
 	    intent.putExtra("livro", livro);
 	    startActivity(intent);      
 	}
